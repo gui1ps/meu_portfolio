@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 .App{
     background-color: rgba(0, 0, 0, 0.92);
     width: 100vw;
     height: 100vh;
+    font-family: 'Quicksand', sans-serif;
 }
