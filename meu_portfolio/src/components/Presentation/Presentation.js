@@ -1,4 +1,4 @@
-import styles from './Presentation.module.css'
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,7 +8,7 @@ import Btn from './Btn/Btn';
 function Presentation(){
     const Myname='<b>Guilherme</b>'
     return(
-        <header>
+        <section id='s-presentation'>
             <Container className="d-flex justify-content-center align-items-center vh-100">
                     <Row>
                         <Col lg={8} xs={12} className="text-center text-lg-start">
@@ -16,10 +16,10 @@ function Presentation(){
                             <Icons/>
                             <Btn/>
                         </Col>
-                        <Col lg={4} className='d-none d-lg-flex justify-content-center align-items-center'><img className='img-fluid text-center' src='https://via.placeholder.com/300'/></Col>
+                        <Col lg={4} className='d-none d-lg-flex justify-content-center align-items-center'><img className='img-fluid' src='https://via.placeholder.com/300'/></Col>
                     </Row>
             </Container>
-        </header>
+        </section>
     )
 }
 export default Presentation;

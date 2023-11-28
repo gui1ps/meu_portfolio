@@ -6,4 +6,5 @@
     height: auto;
     font-family: 'Quicksand', sans-serif;
     color: #ffff;
+    overflow: hidden;
 }

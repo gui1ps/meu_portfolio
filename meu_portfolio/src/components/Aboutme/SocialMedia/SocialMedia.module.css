@@ -1,0 +1,10 @@
+.SocialMediaIcons{
+    margin: 0 2px;
+    cursor: pointer;
+}
+.SocialMediaIcons:hover,.SocialMediaIcons:active{
+    transform: rotateY(360deg);
+}
+.SocialMediaIcons{
+    transition: 0.5s ease-in;
+}
