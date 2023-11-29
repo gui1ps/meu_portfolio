@@ -1,11 +1,10 @@
-import styles from './Aboutme.module.css'
 import { Container, Row, Col } from 'react-bootstrap';
 import SocialMedia from './SocialMedia/SocialMedia';
 function Aboutme(){
     const AboutMeTitle="<Sobre mim/>"
     return(
         <section id='s-about'>
-            <Container className='d-flex justify-content-center align-items-center'>
+            <Container className='d-flex justify-content-center align-items-center mb-5'>
                 <Container fluid className='bg-dark p-5 rounded'>
                     <Row className='gy-4'>
                         <Col lg={6} xs={12} className='d-flex justify-content-center align-itens-center'>

@@ -1,0 +1,13 @@
+.mainContainer {
+    transition: height 0.5s ease-in-out; /* Adiciona uma transição suave na altura */
+  }
+  
+.fadeIn {
+    opacity: 1;
+  }
+  
+.fadeOut {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+  }
