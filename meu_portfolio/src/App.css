@@ -4,7 +4,7 @@
     background-color: rgba(0, 0, 0, 0.92);
     width: 100vw;
     height: auto;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif !important;
     color: #ffff;
     overflow: hidden;
 }

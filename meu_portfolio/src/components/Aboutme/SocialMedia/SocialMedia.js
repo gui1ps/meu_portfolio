@@ -1,8 +1,4 @@
 import { Container } from "react-bootstrap";
-import { IconContext } from "react-icons";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 import styles from './SocialMedia.module.css'
 import { SocialIcon } from 'react-social-icons/component'
 import 'react-social-icons/whatsapp'
@@ -14,11 +10,11 @@ import 'react-social-icons/linkedin'
 function SocialMedia(){
     return (
         <Container className="p-0">
-            <SocialIcon className={styles.SocialMediaIcons}  url="www.github.com" />
-            <SocialIcon className={styles.SocialMediaIcons}  url="www.linkedin.com" />
-            <SocialIcon className={styles.SocialMediaIcons}  url="www.email.com" />
-            <SocialIcon className={styles.SocialMediaIcons}  url="www.instagram.com" />
-            <SocialIcon className={styles.SocialMediaIcons}  url="www.whatsapp.com" />
+            <SocialIcon className={styles.SocialMediaIcons} target="_blank" url="https://github.com/gui1ps" />
+            <SocialIcon className={styles.SocialMediaIcons} target="_blank" url="https://www.linkedin.com/in/guilherme-roberto-dos-passos/" />
+            <SocialIcon className={styles.SocialMediaIcons} target="_blank" network="email" url="mailto:guilhermerobertodospassos@gmail.com"/>
+            <SocialIcon className={styles.SocialMediaIcons} target="_blank" url="https://instagram.com/gui_guisinho?igshid=M2RkZGJiMzhjOQ==" />
+            <SocialIcon className={styles.SocialMediaIcons} target="_blank" network="whatsapp" url="https://wa.me/5548996938354"/>
         </Container>
     )
 }
