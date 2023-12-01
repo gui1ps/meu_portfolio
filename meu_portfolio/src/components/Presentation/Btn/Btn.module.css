@@ -1,16 +1,18 @@
-.Btn{
-    border: 1px solid #ffff;
-    background-color: transparent;
-    color: #ffff;
-    border-radius: 50px;
-    font-size: 25px;
-    padding: 5px 20px;
-    margin-top: 1rem;
+.Btn {
+  border: 1px solid #ffff;
+  background-color: transparent;
+  color: #ffff;
+  border-radius: 50px;
+  font-size: 25px;
+  padding: 5px 20px;
+  margin-top: 1rem;
 }
-.Btn:hover,.Btn:active{
-    color: black;
-    background-color: #ffff;
+.Btn:hover,
+.Btn:active {
+  color: black;
+  background-color: #ffff;
+  box-shadow: 0 0 30px 1px #ffff;
 }
-.Btn{
-    transition: all 0.5s ease-in;
+.Btn {
+  transition: all 0.5s ease-in;
 }

@@ -1,10 +1,11 @@
-.iconsStyle{
-    margin: 0 1px;
-    cursor: pointer;
+.iconsStyle {
+  margin: 0 1px;
+  cursor: pointer;
 }
-.iconsStyle:hover,.iconsStyle:active{
-    transform: rotateY(360deg);
+.iconsStyle:hover,
+.iconsStyle:active {
+  transform: rotateY(360deg);
 }
-.iconsStyle{
-    transition: all 0.5s ease-in;
+.iconsStyle {
+  transition: all 0.5s ease-in;
 }

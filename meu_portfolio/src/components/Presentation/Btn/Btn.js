@@ -1,10 +1,10 @@
-import styles from './Btn.module.css'
+import styles from "./Btn.module.css";
 
-function Btn(){
-    return(
-        <>
-            <button className={styles.Btn}>Download CV</button>
-        </>
-    )
+function Btn() {
+  return (
+    <>
+      <button className={styles.Btn}>Download CV</button>
+    </>
+  );
 }
-export default Btn
+export default Btn;

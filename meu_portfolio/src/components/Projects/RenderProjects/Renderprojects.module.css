@@ -1,0 +1,17 @@
+@keyframes animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.ProjectsContainer {
+  animation: animation;
+  animation-timing-function: ease;
+  animation-duration: 1.5s;
+  animation-delay: 0;
+  animation-duration: normal;
+  animation-fill-mode: none;
+  animation-iteration-count: 1;
+}

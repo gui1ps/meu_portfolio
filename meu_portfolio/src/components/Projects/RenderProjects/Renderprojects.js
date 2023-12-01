@@ -1,5 +1,6 @@
 import { Card, Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
+import styles from "./Renderprojects.module.css";
 
 function Renderprojects({ itens }) {
   if (!itens || !Array.isArray(itens) || itens.length === 0) {
@@ -14,7 +15,7 @@ function Renderprojects({ itens }) {
       <Row
         xs={1}
         md={2}
-        className="d-flex align-items-center g-4 pb-4 border border-top-light border-bottom-light border-end-0 border-start-0"
+        className={`d-flex align-items-center g-4 pb-4 border border-top-light border-bottom-light border-end-0 border-start-0 ${styles.ProjectsContainer}`}
       >
         {itens.map((e, idx) => (
           <Col key={idx}>

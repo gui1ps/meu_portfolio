@@ -34,7 +34,10 @@ function Projects() {
   return (
     <section id="s-projects">
       <Container className="d-flex justify-content-center align-items-center mb-5 mt-5">
-        <Container fluid className="bg-dark p-5 rounded">
+        <Container
+          fluid
+          className={`bg-dark p-5 rounded ${styles.ProjectsContainer}`}
+        >
           <h1 className="fw-bold">{projectsTitle}</h1>
           <Row className="mb-4">
             <Col xs={12}>
