@@ -2,34 +2,42 @@ import { Col, Container, Row } from "react-bootstrap";
 import styles from "./Projects.module.css";
 import Buttons from "./Buttons/Buttons";
 import Renderprojects from "./RenderProjects/Renderprojects";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from 'axios';
+
 function Projects() {
+  const baseUrl = "http://localhost:3000/api/projetos";
+  const [items, setItems] = useState([]);
+
+  useEffect(() => {
+    const config = {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      data: {},
+    };
+    axios.get(baseUrl,config)
+      .then((response) => {
+        console.log("Dados da API:", response.data);
+        setItems(response.data);
+      })
+      .catch((error) => {
+        if (error.response) {
+          console.error("Erro na resposta do servidor:", error.response.data);
+          console.error("Status do erro:", error.response.status);
+          console.error("Cabeçalhos do erro:", error.response.headers);
+        } else if (error.request) {
+          console.error("Erro na solicitação, sem resposta do servidor:", error.request);
+        } else {
+          console.error("Erro ao configurar a solicitação:", error.message);
+        }
+        console.error("Configuração do erro:", error.config);
+      });
+  }, []);
+
   const projectsTitle = "<Projetos/>";
-
-  let teste = [
-    {
-      title: "Teste",
-      text: "Texto de teste",
-      url: "https://via.placeholder.com/100",
-    },
-    {
-      title: "Teste",
-      text: "Texto de teste",
-      url: "https://via.placeholder.com/100",
-    },
-    {
-      title: "Teste",
-      text: "Texto de teste",
-      url: "https://via.placeholder.com/100",
-    },
-    {
-      title: "Teste",
-      text: "Texto de teste",
-      url: "https://via.placeholder.com/100",
-    },
-  ];
-
-  const [View, setView] = useState(true);
+  const [ViewHighlights, setViewHighlights] = useState(true);
+  const [ViewAll, setViewAll] = useState(true);
 
   return (
     <section id="s-projects">
@@ -41,18 +49,20 @@ function Projects() {
           <h1 className="fw-bold">{projectsTitle}</h1>
           <Row className="mb-4">
             <Col xs={12}>
-              <Buttons event={() => setView(!View)} text="Destaques" />
+              <Buttons event={() => setViewHighlights(!ViewHighlights)} text="Destaques" />
             </Col>
-            {View ? <Renderprojects itens={teste} /> : <></>}
+            {ViewHighlights ? <Renderprojects itens={items} ishighlight={true}/> : <></>}
           </Row>
           <Row>
             <Col xs={12}>
-              <Buttons text="Todos" />
+            <Buttons event={() => setViewAll(!ViewAll)} text="Todos" />
             </Col>
+            {ViewAll ? <Renderprojects itens={items} ishighlight={false} /> : <></>}
           </Row>
         </Container>
       </Container>
     </section>
   );
 }
+
 export default Projects;
