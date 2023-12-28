@@ -2,6 +2,7 @@ import { Card, Container } from "react-bootstrap";
 import { Row, Col } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import styles from "./Renderprojects.module.css";
+import isUrl from "is-url";
 
 function Renderprojects({ itens,ishighlight }) {
   if (!itens || !Array.isArray(itens) || itens.length === 0) {
@@ -29,7 +30,7 @@ function Renderprojects({ itens,ishighlight }) {
                       <Card.Title>{e.titulo}</Card.Title>
                       <Card.Text>{e.texto}</Card.Text>
                       <Button size="sm" variant="outline-dark">Ver no GitHub</Button>
-                      {e.url_projeto?<Button size="sm" className={`${styles.projectBtn} ms-sm-0 ms-md-1`} variant="outline-dark">Acessar Projeto</Button>:<></>}
+                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" className="ms-sm-0 ms-md-1 mt-sm-1 mt-md-0" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" className="ms-xs-0 ms-lg-1" variant="outline-dark" disabled>{e.url_projeto}</Button>}
                     </Card.Body>
                   </Card>
                 </Col>
@@ -44,7 +45,7 @@ function Renderprojects({ itens,ishighlight }) {
                       <Card.Title>{e.titulo}</Card.Title>
                       <Card.Text>{e.texto}</Card.Text>
                       <Button size="sm" variant="outline-dark">Ver no GitHub</Button>
-                      {e.url_projeto?<Button size="sm" className={`${styles.projectBtn} ms-sm-0 ms-md-1`} variant="outline-dark">Acessar Projeto</Button>:<></>}
+                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" className="ms-sm-0 ms-md-1 mt-sm-1 mt-md-0" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" className="ms-xs-0 ms-lg-1" variant="outline-dark" disabled>{e.url_projeto}</Button>}
                     </Card.Body>
                   </Card>
                 </Col>
