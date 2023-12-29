@@ -27,8 +27,8 @@ function navbar() {
                   className="justify-content-end"
                 >
                   <Nav>
-                    <Nav.Link href="#sobre">Sobre mim</Nav.Link>
-                    <Nav.Link href="#projetos">Projetos</Nav.Link>
+                    <Nav.Link href="#s-about">Sobre mim</Nav.Link>
+                    <Nav.Link href="#s-projects">Projetos</Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
               </Container>
