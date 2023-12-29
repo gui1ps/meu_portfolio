@@ -26,11 +26,11 @@ function Renderprojects({ itens,ishighlight }) {
                 <Col key={idx}>
                   <Card>
                     <Card.Img variant="top" src={e.url_foto} />
-                    <Card.Body>
+                    <Card.Body className="d-grid gap-2">
                       <Card.Title>{e.titulo}</Card.Title>
                       <Card.Text>{e.texto}</Card.Text>
                       <Button size="sm" variant="outline-dark">Ver no GitHub</Button>
-                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" className="ms-sm-0 ms-md-1 mt-sm-1 mt-md-0" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" className="ms-xs-0 ms-lg-1" variant="outline-dark" disabled>{e.url_projeto}</Button>}
+                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" variant="outline-dark" disabled>{e.url_projeto}</Button>}
                     </Card.Body>
                   </Card>
                 </Col>
@@ -41,11 +41,11 @@ function Renderprojects({ itens,ishighlight }) {
                 <Col key={idx}>
                   <Card>
                     <Card.Img variant="top" src={e.url_foto} />
-                    <Card.Body>
+                    <Card.Body className="d-grid gap-2">
                       <Card.Title>{e.titulo}</Card.Title>
                       <Card.Text>{e.texto}</Card.Text>
                       <Button size="sm" variant="outline-dark">Ver no GitHub</Button>
-                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" className="ms-sm-0 ms-md-1 mt-sm-1 mt-md-0" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" className="ms-xs-0 ms-lg-1" variant="outline-dark" disabled>{e.url_projeto}</Button>}
+                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" variant="outline-dark" disabled>{e.url_projeto}</Button>}
                     </Card.Body>
                   </Card>
                 </Col>
