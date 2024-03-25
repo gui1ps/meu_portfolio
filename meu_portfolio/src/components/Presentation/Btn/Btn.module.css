@@ -11,7 +11,7 @@
 .Btn:active {
   color: black;
   background-color: #ffff;
-  box-shadow: 0 0 30px 1px #ffff;
+  box-shadow: 0 0 15px 1px #ffff;
 }
 .Btn {
   transition: all 0.5s ease-in;

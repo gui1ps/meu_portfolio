@@ -20,10 +20,12 @@ function Aboutme() {
             <Col lg={6} xs={12} className="text-start">
               <h1 className="fw-bold">{AboutMeTitle}</h1>
               <p className="text-wrap text-break fs-5">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
+                Meu nome é Guilherme Roberto dos Passos, tenho 21 anos e sou
+                apaixonado por programação. Atualmente, estou focado em
+                desenvolver habilidades fullstack, com uma carga maior, por
+                enquanto, no front end. Faço questão de dar o meu melhor em cada
+                projeto que desenvolvo, buscando sempre aprofundar o
+                conhecimento que já possuo e desenvolver novas habilidades.
               </p>
               <SocialMedia />
             </Col>
