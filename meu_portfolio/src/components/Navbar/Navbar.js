@@ -9,11 +9,11 @@ function navbar() {
   const logo = "<G/>";
 
   return (
-    <header>
+    <header className={'bg-dark position-fixed vw-100 z-1'} >
       <Container fluid>
         <Row>
           <Col xs={12}>
-            <Navbar expand="lg" variant="dark">
+            <Navbar expand="lg" variant="dark"> 
               <Container>
                 <Navbar.Brand href="#home" className={styles.logo}>
                   {logo}
