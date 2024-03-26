@@ -15,7 +15,7 @@ function navbar() {
           <Col xs={12}>
             <Navbar expand="lg" variant="dark"> 
               <Container>
-                <Navbar.Brand href="#home" className={styles.logo}>
+                <Navbar.Brand href="#s-presentation" className={styles.logo}>
                   {logo}
                 </Navbar.Brand>
                 <Navbar.Toggle
