@@ -1,0 +1,12 @@
+{
+    "projetos":[
+        {
+            "titulo":"Cardápio Digital",
+            "texto":"Este projeto apresenta um cardápio digital interativo, onde o usuário pode explorar uma ampla variedade de produtos oferecidos por um restaurante fictício. De forma simples e prática, o cliente pode selecionar seus itens preferidos e adicioná-los ao carrinho de compras. Entre as funcionalidades disponíveis estão: filtrar produtos por categoria, ajustar as quantidades desejadas, remover itens do carrinho e, ao final, simular a conclusão da compra.",
+            "url_foto":"https://img.freepik.com/fotos-premium/sub-sanduiche-com-presunto_770123-6517.jpg",
+            "url_repo":"https://github.com/gui1ps/Cardapio_Digital",
+            "url_projeto":"",
+            "destaque":1
+        }
+    ]
+}
