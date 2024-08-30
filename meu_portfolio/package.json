@@ -26,11 +26,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "server": "json-server --watch db.json --port 5000",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"npm run start\" \"npm run server\""
+    "dev": "concurrently \"npm run start-api\" \"npm start\"",
+    "start-api": "node api/server.js"
   },
   "eslintConfig": {
     "extends": [
