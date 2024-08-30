@@ -25,12 +25,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "npm run dev",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"npm run start-api\" \"npm start\"",
-    "start-api": "node api/server.js"
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "json-server --watch db.json --port 5000",
+    "client": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [

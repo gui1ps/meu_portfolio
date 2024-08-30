@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import axios from 'axios';
 
 function Projects() {
-  const baseUrl = "http://localhost:5000/projetos";
+  const baseUrl = "https://meu-portfolio-json-server-vercel.vercel.app/projetos";
   const [items, setItems] = useState([]);
 
   useEffect(() => {
