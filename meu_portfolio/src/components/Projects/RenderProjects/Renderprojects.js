@@ -29,8 +29,8 @@ function Renderprojects({ itens,ishighlight }) {
                     <Card.Body className="d-grid gap-2">
                       <Card.Title>{e.titulo}</Card.Title>
                       <Card.Text>{e.texto}</Card.Text>
-                      <Button size="sm" variant="outline-dark">Ver no GitHub</Button>
-                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" variant="outline-dark" disabled>{e.url_projeto}</Button>}
+                      <Button size="sm" variant="outline-dark" href={e.url_repo} target="_blank">Ver no GitHub</Button>
+                      {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" variant="outline-dark" disabled>Projeto indisponível no momento</Button>}
                     </Card.Body>
                   </Card>
                 </Col>
@@ -44,7 +44,7 @@ function Renderprojects({ itens,ishighlight }) {
                     <Card.Body className="d-grid gap-2">
                       <Card.Title>{e.titulo}</Card.Title>
                       <Card.Text>{e.texto}</Card.Text>
-                      <Button size="sm" variant="outline-dark">Ver no GitHub</Button>
+                      <Button size="sm" variant="outline-dark" href={e.url_repo} target="_blank">Ver no GitHub</Button>
                       {isUrl(e.url_projeto)?<Button href={e.url_projeto} target="_blank" size="sm" variant="outline-dark">Acessar Projeto</Button>:<Button size="sm" variant="outline-dark" disabled>{e.url_projeto}</Button>}
                     </Card.Body>
                   </Card>
